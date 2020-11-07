@@ -1,0 +1,17 @@
+{% extends 'codefury_backend/base.html' %}
+
+{% block body %}
+<div class = 'container'>
+    <form action = "" method = "POST"> 
+        {% csrf_token %}  
+        <label for="working_hours">Working hours: </label> 
+        <input id="working_hours" type="text" name="working_hours"> 
+        <label for="job_location">Job Location: </label> 
+        <input id="job_location" type="text" name="job_location"> 
+        <input type="submit" value="OK"> 
+    </form>
+  <h1>Job Type</h1>
+  <h1>Location</h1>
+  
+</div>
+{% endblock %}

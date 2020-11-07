@@ -1,0 +1,10 @@
+{% extends 'codefury_backend/base.html' %}
+
+{% block body %}
+<div class = 'container'>
+    {%for candidate in candidates%}
+  <h1>Name:{{candidate.name}}</h1>
+  <h1>Experience:{{candidate.experience}}</h1>
+  {% endfor %}
+</div>
+{% endblock %}

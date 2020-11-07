@@ -1,0 +1,10 @@
+{% extends 'codefury_backend/base.html' %}
+
+{% block body %}
+<div class = 'container'>
+    {%for job in jobs%}
+  <h1>Company:{{job.company_name}}</h1>
+  <h1>Salary:{{job.salary}}</h1>
+  {% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'codefury_backend/base.html' %}
+
+{% block body %}
+<div class = 'container'>
+  <h1>Logged Out</h1>
+  <p> Want to login again?</p>
+ 
+  <a href="{%url 'codefury_backend:login'%}"><button type="submit" class= "btn btn-danger">Login</button></a>
+  </form>
+</div>
+{% endblock%}
